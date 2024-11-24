@@ -1,0 +1,38 @@
+[
+    {
+        "coffee": "Espresso",
+        "quantity": 1,
+        "total_price": 2.5,
+        "user_name": "Nihal"
+    },
+    {
+        "coffee": "Cappuccino",
+        "quantity": 2,
+        "total_price": 6.0,
+        "user_name": "Shariq "
+    },
+    {
+        "coffee": "Espresso",
+        "quantity": 1,
+        "total_price": 2.5,
+        "user_name": "nihal"
+    },
+    {
+        "coffee": "Espresso",
+        "quantity": 10,
+        "total_price": 25.0,
+        "user_name": "nihal"
+    },
+    {
+        "coffee": "Cappuccino",
+        "quantity": 1,
+        "total_price": 3.0,
+        "user_name": "bilal"
+    },
+    {
+        "coffee": "Latte",
+        "quantity": 1,
+        "total_price": 3.5,
+        "user_name": "asd"
+    }
+]

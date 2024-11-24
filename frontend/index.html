@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Maker App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="text-primary">Coffee Maker App</h1>
+            <p class="lead">Your favorite coffee, just a click away!</p>
+        </header>
+
+        <div id="status-message" class="alert d-none" role="alert"></div>
+
+        <section id="menu-section" class="mb-5">
+            <h2>Menu</h2>
+            <div id="coffee-menu" class="row"></div>
+        </section>
+
+        <section id="order-section" class="mb-5">
+            <h2>Place an Order</h2>
+            <form id="order-form" class="card p-3">
+                <div class="mb-3">
+                    <label for="coffee-id" class="form-label">Select Coffee:</label>
+                    <select id="coffee-id" class="form-select" required></select>
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity:</label>
+                    <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="user-name" class="form-label">Your Name:</label>
+                    <input type="text" id="user-name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="quarters" class="form-label">Quarters ($0.25):</label>
+                    <input type="number" id="quarters" class="form-control" min="0" value="0" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dimes" class="form-label">Dimes ($0.10):</label>
+                    <input type="number" id="dimes" class="form-control" min="0" value="0" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nickels" class="form-label">Nickels ($0.05):</label>
+                    <input type="number" id="nickels" class="form-control" min="0" value="0" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pennies" class="form-label">Pennies ($0.01):</label>
+                    <input type="number" id="pennies" class="form-control" min="0" value="0" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100"><i class="fa fa-coffee"></i> Place Order</button>
+            </form>
+        </section>
+
+        <section id="orders-section" class="mb-5">
+            <h2>Order History</h2>
+            <ul id="order-history" class="list-group"></ul>
+        </section>
+
+        <section id="inventory-section">
+            <h2>Inventory Status</h2>
+            <div id="inventory-status" class="row"></div>
+        </section>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
